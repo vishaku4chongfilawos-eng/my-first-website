@@ -1,0 +1,72 @@
+/*Reset small spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Body stylinig */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+/*Navigation Bar */
+.navbar {
+    background-color: #848fa5;
+    padding: 10px;
+    text-align: center;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+}
+.navbar a:hover {
+    background-color: #555;
+}
+/*Main Container */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/*Headings */
+h1, h2, h3 {
+    color: #848fa5;
+    margin-bottom: 10px;
+}
+/*Paragraphs */
+p {
+    margin-bottom: 15px;
+    font-size: 16;
+    color: #555;
+}
+/*Service Cards */
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+.card h3 {
+    margin-top: 0;
+    color: #333;
+}
+.card p {
+    color: #666;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
