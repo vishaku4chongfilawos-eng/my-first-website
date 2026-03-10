@@ -287,3 +287,15 @@ body.dark-mode .skill-box p {
 body.dark-mode .skill-box i {
     color: #f4f4f4;
 }
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #848fa5;
+    transition: 0.3s ease;
+}
+.profile-img:hover {
+    transform: scale(1.1);
+    border-color: #333;
+}
