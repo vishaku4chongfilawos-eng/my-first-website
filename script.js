@@ -19,3 +19,13 @@ function showMessage3() {
     msg3.style.fontSize = "18px";
     msg3.style.marginTop = "10px";
 }
+const darkModeToggle = document.getElementById("dark-mode-toggle");
+darkModeToggle.addEventListener("click", function() {
+    document.body.classList.toggle("dark-mode");
+    // change button text
+    if(document.body.classList.contains("dark-mode")){
+        darkModeToggle.textContent = "Light Mode";
+    } else {
+        darkModeToggle.textContent = "Dark Mode";
+    }
+});

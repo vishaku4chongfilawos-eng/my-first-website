@@ -29,12 +29,6 @@ body {
 .navbar a:hover {
     background-color: #555;
 }
-nan {
-    background:#333;
-    padding: 15px;
-    position: sticky;
-    z-index: 1000;
-}
 nav a {
     color: white;
     text-decoration: none;
@@ -51,7 +45,7 @@ nav a.active {
     background-color: #555;
 }
 nav a.active{
-    color:#333
+    color:#333;
     border-bottom:2px solid #333;
 }
 /*Main Container */
@@ -71,7 +65,7 @@ h1, h2, h3 {
 /*Paragraphs */
 p {
     margin-bottom: 15px;
-    font-size: 16;
+    font-size: 16px;
     color: #555;
 }
 /*Service Cards */
@@ -100,11 +94,23 @@ footer {
     background-color: #848fa5;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     margin-top: 20px;
 }
-footer p {
+.footer-content p {
     margin: 5px 0;
+}
+.social-links {
+    margin-top: 10px;
+}
+.social-links a {
+    color: white;
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+.social-links a:hover {
+    color: #ddd;
 }
 nav{
     display: flex;
@@ -155,4 +161,129 @@ form button{
 }
 form button:hover{
     background: #333;
+}
+.hero{
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.hero h1{
+    font-size: 2.5em;
+    color: #333;
+}
+.hero p{
+    font-size: 1.2em;
+    color: #666;
+    margin-top: 20px;
+}
+.hero .btn{
+    display: inline-block;
+    background-color: #848fa5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+.hero .btn.secondary{
+    background-color: #555;
+    margin-left: 10px;
+}
+.hero .btn:hover{
+    background-color: #333;
+}
+.profile-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #848fa5;
+}
+.skills{
+    padding: 60px 20px;
+    text-align: center;
+}
+.skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.skill-box{
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+.skill-box i{
+    font-size: 3em;
+    color: #848fa5;
+    margin-bottom: 10px;
+}
+.skill-box:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+    color: #333;
+}
+.skills-box p{
+    color: #666;
+}
+/*Dark Mode styles */
+body.dark-mode{
+    background-color: #121212;
+    color: #f4f4f4;
+}
+body.dark-mode .navbar{
+    background-color: #333;
+}
+body.dark-mode a{
+    color: #f4f4f4;
+}
+body.dark-mode .projects .card{
+    background-color: #1e1e1e;
+    border-color: #444;
+}
+body.dark-mode .skill-box{
+    background-color: #555;
+    border-color: #444;
+}
+body.dark-mode .hero {
+    background-color: #1e1e1e;
+}
+body.dark-mode .hero h1 {
+    color: #f4f4f4;
+}
+body.dark-mode .hero p {
+    color: #ccc;
+}
+body.dark-mode .btn {
+    background-color: #555;
+}
+body.dark-mode .btn:hover {
+    background-color: #777;
+}
+body.dark-mode .skill-box {
+    background-color: #555;
+    border-color: #666;
+    color: #f4f4f4;
+}
+body.dark-mode .skill-box h3 {
+    color: #f4f4f4;
+}
+body.dark-mode .skill-box p {
+    color: #ccc;
+}
+body.dark-mode .skill-box i {
+    color: #f4f4f4;
 }

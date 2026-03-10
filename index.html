@@ -1,22 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio of Victor Ishaku, Computer Science Student and Web Developer. View my projects, skills, and services.">
+        <meta name="keywords" content="Victor Ishaku, Web Developer, Computer Science, Portfolio, HTML, CSS, JavaScript">
         <link rel="stylesheet" href="style.css">
-        <title>My First Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <title>Victor Ishaku - Web Developer Portfolio</title>
         <script src="script.js" defer></script>
     </head>
     <body>
-
         <nav class="navbar">
             <a href="index.html" class="active">home</a>
             <a href="about.html">about</a>
             <a href="services.html">services</a>
             <a href="contact.html">contact</a>
             <a href="projects.html">projects</a>
-            <a href="https ://www.google.com" target="_blank">google</a>
-            <style>
+            <a href="https://www.google.com" target="_blank">google</a>
+
+            <button id="dark-mode-toggle">Dark Mode</button>
+            <style>        
                 .navbar {
                     background-color: #848fa5;
                     padding: 10px;
@@ -39,8 +43,42 @@
             }
             </style>
         </nav>
-        <h2>Welcome to my Website</h2>
-        <p>This is my Home Page</p>
+        <section class="hero">
+                <div class="hero-content">
+                    <h1>Hi, I'm Victor Ishaku!</h1>
+                    <p>Computer Science Student | Aspiring Web Developer</p>
+                    <a href="projects.html" class="btn">View My Projects</a>
+                    <a href="contact.html" class="btn secondary">Contact Me</a>
+                </div>
+                <div class="hero-image">
+                    <img src="https://via.placeholder.com/300x300/848fa5/ffffff?text=VI" alt="Victor Ishaku Profile Picture" class="profile-img">
+                </div>
+            </section>
+        <section class="skills">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-box">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML</h3>
+                    <p>Building structured and semantic web pages.</p>
+                </div>
+                <div class="skill-box">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS</h3>
+                    <p>Designing responsive and modern layouts and styling web pages.</p>
+                </div>
+                <div class="skill-box">
+                    <i class="fab fa-js-square"></i>
+                    <h3>JavaScript</h3>
+                    <p>Adding interactivity to web pages using JavaScript.</p>
+                </div>
+                <div class="skill-box">
+                    <i class="fab fa-git-alt"></i>
+                    <h3>Git and GitHub</h3>
+                    <p>Proficient in version control and collaborative development.</p>
+                </div>
+            </div>
+        </section>
          <h2>Greet Yourself!</h2>
             <input type="text" id="username"
             placeholder="Ishaku Victor Chongfilwos">
@@ -69,10 +107,17 @@
             Visit Google
         </a>  
         <footer>
-            <p>&copy 2026 Victor Ishaku. All rights reserved.</p>
-            <p>Built with HTML, CSS, & JavaScript</p>
-        </footer>      
+            <div class="footer-content">
+                <p>&copy; 2026 Victor Ishaku. All rights reserved.</p>
+                <p>Built with <i class="fas fa-heart"></i> using HTML, CSS, & JavaScript</p>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="mailto:vishaku4chongfilawos@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </footer>  
+<script src="script.js"></script>
     </body>
 </html>
-
- 
