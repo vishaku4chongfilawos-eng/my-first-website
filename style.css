@@ -48,6 +48,17 @@ nav a.active{
     color:#333;
     border-bottom:2px solid #333;
 }
+nav{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    padding: 15px 30px;
+}
+nav a{
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
 /*Main Container */
 .container {
     max-width: 1200px;
@@ -189,6 +200,7 @@ form button:hover{
     border-radius: 4px;
     text-decoration: none;
     margin-top: 20px;
+    font-weight: bold;
     transition: background-color 0.3s;
 }
 .hero .btn.secondary{
@@ -196,7 +208,13 @@ form button:hover{
     margin-left: 10px;
 }
 .hero .btn:hover{
-    background-color: #333;
+    background-color: #4b352a;
+    transform: scale(1.05);
+}
+.hero{
+    background: linear-gradient(135deg, #30323b, #5e5568);
+    color: white;
+    border-radius: 10px;
 }
 .profile-img{
     width: 200px;
@@ -234,6 +252,8 @@ form button:hover{
     transform: translateY(-5px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+.skill-box h3{
+    margin-top: 0;
     color: #333;
 }
 .skills-box p{
@@ -298,4 +318,42 @@ body.dark-mode .skill-box i {
 .profile-img:hover {
     transform: scale(1.1);
     border-color: #333;
+}
+.cursor{
+    font-weight: bold;
+    font-size: 20px;
+    animation: blink 1s step-start infinite;
+}
+@keyframes blink{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+section{
+    margin: 40px 0;
+    padding:80px 20px;
+}
+.project-card{
+    width: 260px;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+.project-card h3{
+    margin-top: 0;
+    color: #333;
+}
+.project-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
